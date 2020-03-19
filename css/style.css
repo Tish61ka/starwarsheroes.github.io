@@ -1,0 +1,432 @@
+html,
+body {
+  margin: 0;
+  background: #ebe9e9;
+}
+
+.btn-close {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 30px;
+  text-align: center;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 90px;
+}
+
+.main-header h1 {
+  font-size: 30px;
+}
+
+.main-menu {
+  display: block;
+  width: 150px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background: #ebe9e9;
+  padding: 0;
+  transform: translateX(-150px);
+  transition: 0.3s;
+}
+
+.main-menu.is-open {
+  transform: translateX(0);
+}
+
+.menu-item {
+  display: block;
+  margin: 10px;
+  list-style-type: none;
+}
+
+.menu_container {
+  padding: 0;
+}
+
+.menu-link {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.3);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 120px;
+  text-align: center;
+}
+
+.menu-link:hover {
+  box-shadow: 0 0 3px 0 rgba(50, 50, 50, 0.8);
+}
+
+.big-pic {
+  height: calc(100vh - 80px);
+  width: 100%;
+  background: url(https://www.mldspot.com/sites/default/files/field/image/StarWars-Aug2016.jpg) 50% / cover;
+}
+
+.split {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-text {
+  width: 400px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.right-text {
+  width: 400px;
+}
+
+.brief-item {
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  box-sizing: border-box;
+  background: gray;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+
+.brief-item > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.brief-item > p {
+  position: relative;
+  left: 0;
+  margin-top: 120px;
+  color: white;
+  font-family: fantasy;
+  text-align: center;
+}
+.main-footer {
+  height: 150px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ebe9e9;
+}
+
+h2 {
+  text-align: center;
+}
+.footer-menu {
+  display: none;
+}
+
+
+@media (min-width: 1024px) {
+  .btn-close {
+    display: none;
+  }
+  .main-menu {
+    position: relative;
+    width: auto;
+    height: auto;
+    transform: translateX(0);
+  }
+  .menu_container {
+    display: flex;
+  }
+
+  .brief {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .brief-item {
+    width: 300px;
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+    background: gray;
+    margin: 20px;
+    transition: 0.3s;
+  }
+
+  .brief-item:hover {
+    transform: scale(1.1);
+  }
+
+  .footer-menu {
+    display: block;
+  }
+  h3{
+    margin: 10px 10px;
+  }
+  p{
+    text-align: justify;
+  }
+.box{
+  display: inline-block;  
+}
+.b1{
+  height: 300px;
+  width: 29%;
+  text-align: justify;
+  margin: 0 3%;
+  vertical-align: top;
+}
+.b2{
+  height: 300px;
+  width: 29%;
+}
+.b3{
+  height: 300px;
+  width: 29%;
+  vertical-align: top;
+  margin: 0 3%;
+}
+.picture{
+  height: 351px;
+  width: 450px;
+}
+.pic1{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/05/0ed5bfa243e1c85733bcc76d8199ece2.jpg);
+}
+.pic2{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/05/685bd668f259156f94f75810cad927aa.jpg);
+}
+.pic3{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/05/ac28fe2d903c0fdbf108f2418ad8cc8e.jpg);
+}
+.images{
+  width: 495px;
+  height: 300px;
+  display:inline-block;
+  margin: 6px 2px;
+  transition: 0.5s;
+}
+.images_1{
+  width: 495px;
+  height: 300px;
+  display:inline-block;
+  margin: 0px 2px;
+  transition: 0.5s;
+}
+.im1{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/05/37f3d2bfbec6c129d6966e5e2652dff9.jpg);
+}
+.im2{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/05/2630a3dd66f4ea99990f685419d9c933.jpg);
+}
+.im3{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/05/6c0b6b250677630700fc82a33228622c.jpg);
+}
+.im4{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/05/3da350b53211275e46e2050f65349f5d.png);  
+}
+.im5{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/05/8795be8ad2f7b12caff957a40859c68e.jpeg); 
+}
+.im6{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/05/705078a35665b4a5d615ccd980e4725e.jpg);
+}
+.im1:hover{
+  transform: scale(1.1);
+  transform: scale(1.1);
+  transform: scale(1.1);
+}
+.im2:hover{
+  transform: scale(1.1);
+  transform: scale(1.1);
+  transform: scale(1.1);
+}
+.im3:hover{
+  transform: scale(1.1);
+  transform: scale(1.1);
+  transform: scale(1.1);
+}
+.im4:hover{
+  transform: scale(1.1);
+  transform: scale(1.1);
+  transform: scale(1.1);
+}
+.im5:hover{
+  transform: scale(1.1);
+  transform: scale(1.1);
+  transform: scale(1.1);
+}
+.im6:hover{
+  transform: scale(1.1);
+  transform: scale(1.1);
+  transform: scale(1.1);
+}
+.s2{
+  margin: 100px 0 100px 0;
+}
+.s3{
+  margin: 50px 0;
+}
+.kniga{
+  height: 260px;
+  width: 220px;
+  display: inline-block;
+  margin: 10px;
+  transition: 0.5s;
+}
+.kn1{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/05/e98f22453fdd86883c750cf68d42fa01.jpg);
+}
+.kn2{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/05/be2cf07ab03e35950b14ac3025b5e8d0.jpg);
+}
+.kn3{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/05/c8a8e73d851019a637c5ee007d07b01b.jpg);
+}
+.kn4{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/05/89780eb474433f9778c60df587e0354e.jpg);
+}
+.kn5{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/05/82f2799b82c3077e1c78bb0312cf9d33.jpg);
+}
+.kn6{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/05/0fa213fd458113c2eaa7c8a891bf1581.jpg);
+}
+.kn1:hover{
+  transform: scale(1.1);
+  transform: scale(1.1);
+  transform: scale(1.1);
+}
+.kn2:hover{
+  transform: scale(1.1);
+  transform: scale(1.1);
+  transform: scale(1.1);
+}
+.kn3:hover{
+  transform: scale(1.1);
+  transform: scale(1.1);
+  transform: scale(1.1);
+}
+.kn4:hover{
+  transform: scale(1.1);
+  transform: scale(1.1);
+  transform: scale(1.1);
+}
+.kn5:hover{
+  transform: scale(1.1);
+  transform: scale(1.1);
+  transform: scale(1.1);
+}
+.kn6:hover{
+  transform: scale(1.1);
+  transform: scale(1.1);
+  transform: scale(1.1);
+}
+.ramka{
+  height: 400px;
+  width: 300px;
+  padding: 40px 20px;
+}
+
+.kart1{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/06/797d4a4f6a8492740148e3dbb4dfa485.jpg);
+}
+.kart2{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/06/8103f124da13ef9d3c535be9acf95383.jpg);
+}
+.kart3{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/06/e09c02942d48e1008500c0b810ebc521.jpg);
+}
+.kart4{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/06/6c30c2321c7cf8c13b824a9e555d410b.jpg);
+}
+.kart5{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/06/0d34ef59403e20017e4d3008fce4a840.jpg);
+}
+.kart6{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/06/f3f1ca7e3306880280afc244888c045c.jpg);
+}
+.kart1:hover{
+  transform: scale(1.1);
+}
+.kart2:hover{
+  transform: scale(1.1);
+}
+.kart3:hover{
+  transform: scale(1.1);
+}
+.kart4:hover{
+  transform: scale(1.1);
+}
+.kart5:hover{
+  transform: scale(1.1);
+}
+.kart6:hover{
+  transform: scale(1.1);
+}
+.im{
+  width: 495px;
+  height: 275px;
+  display:inline-block;
+  margin: 6px 2px;
+  transition: 0.5s;
+}
+.im_1{
+  width: 495px;
+  height: 275px;
+  display:inline-block;
+  margin: 0px 2px;
+  transition: 0.5s;
+}
+.imag1{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/06/4e0c39ca22c337cc3a992e5660674d98.jpg);
+}
+.imag2{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/06/de8f3bf4592698cb165d4b09045d300a.jpeg);
+}
+.imag3{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/06/6519248db0fea338e7af81b1a50aacd1.jpg);
+}
+.imag4{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/06/d9c615def5f675fa89e92953285ce9ab.jpg);
+}
+.imag5{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/06/4fed56d239c154361bf5ae48513b15b5.jpg);
+}
+.imag6{
+  background: url(https://s8.hostingkartinok.com/uploads/images/2019/06/31d9fb35e43694fbdb65991b7786cd94.jpeg);
+}
+.imag1:hover{
+  transform: scale(1.1);
+}
+.imag2:hover{
+  transform: scale(1.1);
+}
+.imag3:hover{
+  transform: scale(1.1);
+}
+.imag4:hover{
+  transform: scale(1.1);
+}
+.imag5:hover{
+  transform: scale(1.1);
+}
+.imag6:hover{
+  transform: scale(1.1);
+}
+}
